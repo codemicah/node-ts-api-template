@@ -7,5 +7,6 @@ This codebase supports:
 - NodeJS
 - Typescript
 - Express
+- Token based authentication
 - Docker
 - Tests (with jest and supertest)

@@ -6,8 +6,9 @@ const app = express();
 
 app.use(cors());
 app.use(helmet());
+app.use(express.json());
 
-app.get("/test", (req: Request, res: Response) => {
+app.get("/test", (_req: Request, res: Response) => {
   return res.sendStatus(200);
 });
 
