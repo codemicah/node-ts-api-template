@@ -12,7 +12,7 @@ app.get("/test", (_req: Request, res: Response) => {
   return res.sendStatus(200);
 });
 
-app.use("*", (req: Request, res: Response) => {
+app.use((req: Request, res: Response) => {
   const path = req.originalUrl;
   const method = req.method;
   return res.status(404).json({
